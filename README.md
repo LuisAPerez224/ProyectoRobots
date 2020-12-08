@@ -17,4 +17,5 @@ Justo después de la migración a Arduino intentaremos corroborar la informació
 softwares simuladores, tanto electrónicos como mecánicos. Con las debidas medidas de seguridad y prevención 
 médica intentaremos de ser posible llevar los cálculos a un modelo físico.
 
-
+En el programa calculamos con atuda del métode denavit-hartenberg las matrices de traslacion y rotación.
+Este programa se le ingresa los numero de los brazos y los valores para el calculo de las matrices.
