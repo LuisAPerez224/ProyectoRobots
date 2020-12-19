@@ -37,4 +37,5 @@ matrices.
 | --- | --- |
 | Untitled.mlx | Archivo solución de matrices MATLAB |
 | Movimiento.mlx | Archivo movimiento y conexión MATLAB y Arduino |
+| Modelo_brazo_mecánico_FDRM.zip | Modelo del brazo en extensión .obj |
 
