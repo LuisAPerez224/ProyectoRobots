@@ -31,10 +31,10 @@ matrices.
 | Pérez Ponce Luis Antonio | 170856 |
 | Sanchez Rodriguez Alberto Andres |  |
 
-Archivos en Git
+### Archivos en Git
 
 | Archivos | Contenido |
 | --- | --- |
-|||
-|||
-|||
+| Untitled.mlx | Archivo solución de matrices MATLAB |
+| Movimiento.mlx | Archivo movimiento y conexión MATLAB y Arduino |
+
