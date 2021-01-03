@@ -26,7 +26,7 @@ matrices.
 | Integrantes | Clave |
 | --- | --- |
 | Andrade Tirado Marco Antonio |  |
-| Cisneros Noriega Mario Alberto |  |
+| Cisneros Noriega Mario Alberto | 172134 |
 | Hernandez Sanabria Diego Amaury |  |
 | Pérez Ponce Luis Antonio | 170856 |
 | Sanchez Rodriguez Alberto Andres |  |
