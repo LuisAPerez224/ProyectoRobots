@@ -35,7 +35,11 @@ matrices.
 
 | Archivos | Contenido |
 | --- | --- |
-| Untitled.mlx | Archivo solución de matrices MATLAB |
-| Movimiento.mlx | Archivo movimiento y conexión MATLAB y Arduino |
+| Link_Modelo.txt | Link del modelo del brazo y servomotores |
 | Modelo_brazo_mecánico_FDRM.zip | Modelo del brazo en extensión .obj |
+| Movimiento.mlx | Archivo movimiento y conexión MATLAB y Arduino |
+| Proyecto_Final_Robots.pdf | Documento final del proyecto |
+| Readme | Caracteristicas generales del proyecto |
+| Servomotor_Arduino_Programa.txt | Programa en idioma Arduino para movimiento de servomotores |
+| Untitled.mlx | Archivo solución de matrices MATLAB |
 
