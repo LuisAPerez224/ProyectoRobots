@@ -1,0 +1,38 @@
+clear all
+close all
+clc
+prompt = {'Ingresa el numero de brazos'};%solicitamos una entrada
+dlg_title = 'Entrada';%nombre del título
+num_lines = 1;%definimos el numero de líneas de la entrada
+def = {'1'};%definimos el número por default que aparece en la entrada
+answer = inputdlg(prompt,dlg_title,num_lines,def);%guardamos los valores obtenidos en matriz
+num = str2num(answer{:});%guardamos y cambiamos los valores en vectores
+F = sym('A', [num 4]);%creamos una matriz simbolica con los datos de num guardados
+B=eye(4);%creamos una matriz con diagonales con 1
+C = sym('C', [4 4]);%creamos una matriz c de 4x4 con c de prefijo
+clc%limpiamos la ventana de comandos
+for i=1:num%iniciamos un ciclo hasta el numero especificado
+    prompt = {'Ingresa a:','Ingresa alfa:','Ingresa d:','Ingresa theta:'};%desplegamos para pedir informacion de cada brazo
+    dlg_title = sprintf('brazo%d',i);%le ponemos nombre para cada brazo
+    num_lines = 1;%definimos el numero de lineas
+    def1 = {sprintf('a%d',i),sprintf('alfa%d',i),sprintf('d%d',i),sprintf('t%d',i)};%datos de cada brazo
+    answer1 = inputdlg(prompt,dlg_title,num_lines,def1);%los almacenamos en answer 1
+    F(i,1)=answer1(1,1);%almacenamos los valores en una matriz F
+    F(i,2)=answer1(2,1);
+    F(i,3)=answer1(3,1);
+    F(i,4)=answer1(4,1);
+    C=simplify([cos(F(i,4)) -sin(F(i,4))*cos(F(i,2)) sin(F(i,4))*sin(F(i,2)) F(i,1)*cos(F(i,4));
+             sin(F(i,4)) cos(F(i,4))*cos(F(i,2)) -cos(F(i,4))*sin(F(i,2)) F(i,1)*sin(F(i,4));
+             0 sin(F(i,2)) cos(F(i,2)) F(i,3);
+             0 0 0 1]);%se hace el calculo de la ultima matriz
+    eval(sprintf('A%d = C;',i));%evaluamos y pasamos el valor a A%d
+    B=B*C;
+    eval(sprintf('A%d',i))
+end
+sprintf('Matriz del brazo 0 al brazo %d is:',i)
+pretty(simplify(B))%imprimimos la matriz simplificada
+'Matriz de rotacion'  , R=B(1:3,1:3);%separamos los valores de la matriz
+pretty(R)
+d=B(1:3,4
+'Matriz de traslacion' , pretty(d)%imprimimos solo la ultima columna resultante);
+
