@@ -1,0 +1,30 @@
+clear all
+close all
+clc
+%th d a Alp
+ L1= Link([0 0 2 0 0 0]);
+ L2= Link([0 0 2 0 0 0]);
+ L3= Link([0 0 2 0 0 0]);
+ L4= Link([0 0 2 pi/2 0 0]);
+ scara= SerialLink ([L1 L2 L3 L4],'name','SCARA');
+ scara.plot([0 0 0 0])
+ scara.teach
+ 
+
+
+%x = a1*(cosd(t1))+ a2*(cosd(t1+t2)) + a3*(cosd(t1+t2+t3))+a4*(cosd(t1+t2+t3+t4))
+
+%y = a1*(sind(t1))+ a2*(sind(t1+t2)) + a3*(sind(t1+t2+t3))+a4*(sind(t1+t2+t3+t4))
+
+%a1=2; a2=2; a3=2; a4=2; t1=25; t2=25; t3=25; t4=25;
+%x = a1*(cosd(t1))+ a2*(cosd(t1+t2)) + a3*(cosd(t1+t2+t3))+a4*(cosd(t1+t2+t3+t4))
+
+%x =
+
+%    3.2685
+
+%y = a1*(sind(t1))+ a2*(sind(t1+t2)) + a3*(sind(t1+t2+t3))+a4*(sind(t1+t2+t3+t4))
+
+%y =
+
+%    6.2788
