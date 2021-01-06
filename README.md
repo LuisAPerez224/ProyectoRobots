@@ -39,6 +39,8 @@ Este repositorio tambien cuenta con dos modelos, uno representa el modelo fisico
 
 Por ultimo, se agrego un documento en extensión .pdf que contiene todas las investigaciones realizadas para la elaboración de este proyecto y sus resultados pertinentes asi como algunas explicaciones de algunos materiales para la elaboración fisica de este proyecto.
 
+Igualmente se encuentran dos carpetas en el repositorio, la carpeta "Codigos" contiene todos los codigos de las simulacione en formato de nota de texto .txt para una sencilla manipulación de los codigos, la segunda carpeta "Escrito_Proyecto" contiene el trabajo escrito que contiene todos los detalles del proyecto.
+
 ### Archivos en Git
 
 | Archivos | Contenido |
