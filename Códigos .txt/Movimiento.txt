@@ -1,0 +1,17 @@
+clear port
+clear all port
+%para saber donde esta conectado el arduino
+global a;
+a=arduino('COM9','leonardo');
+%Moviemiento de cada motor
+%Los angulos van de 0 a 1 
+% 0 = 0° ; 1 = 180°
+% Conversión de angulo -> (0.555*grados)/100
+s1=servo(a,3);
+writePosition(s1,0);
+s2=servo(a,4);
+writePosition(s2,0.5);
+s3=servo(a,5);
+writePosition(s2,1);
+s4=servo(a,6);
+writePosition(s2,0.5);
